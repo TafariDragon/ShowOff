@@ -13,7 +13,7 @@ class Login : AppCompatActivity() {
         binding=ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnEntrar.setOnClickListener {
+        binding.btnCadastrar.setOnClickListener {
             startActivity(Intent(this,CreateAccount::class.java))
         }
     }

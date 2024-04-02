@@ -15,8 +15,10 @@
         android:layout_centerHorizontal="true"></ImageView>
 
     <ImageView
+        android:id="@+id/iconBack"
         android:layout_width="100dp"
         android:layout_height="50dp"
+        android:clickable="true"
         android:layout_alignLeft="@+id/Logo"
         android:layout_alignBottom="@+id/Logo"
         android:layout_marginLeft="-142dp"
@@ -51,7 +53,8 @@
             android:layout_height="wrap_content"
             android:hint="Nome"
             android:fontFamily="@font/poppinslight"
-            android:layout_marginTop="21dp"></EditText>
+            android:layout_marginTop="21dp"
+            ></EditText>
 
         <EditText
             android:id="@+id/txtApelido"
@@ -66,6 +69,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="Contacto"
+            android:inputType="phone"
             android:fontFamily="@font/poppinslight"
             android:layout_marginTop="21dp"></EditText>
 
@@ -83,7 +87,8 @@
             android:layout_height="wrap_content"
             android:hint="Crie uma senha"
             android:fontFamily="@font/poppinslight"
-            android:layout_marginTop="21dp"></EditText>
+            android:layout_marginTop="21dp"
+            android:inputType="textPassword"></EditText>
 
         <EditText
             android:id="@+id/txtConfirmarSenha"
@@ -91,7 +96,8 @@
             android:layout_height="wrap_content"
             android:hint="Confirme a senha"
             android:fontFamily="@font/poppinslight"
-            android:layout_marginTop="21dp"></EditText>
+            android:layout_marginTop="21dp"
+            android:inputType="textPassword"></EditText>
 
 
         <Button
