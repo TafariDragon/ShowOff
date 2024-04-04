@@ -48,19 +48,19 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <Button
+        <View
             android:layout_width="314dp"
             android:layout_height="155dp"
             android:layout_marginTop="40dp"
-            android:background="@drawable/rounded_button">
-        </Button>
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/azul"></View>
 
-        <Button
+        <View
             android:layout_width="314dp"
             android:layout_height="155dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/rounded_button">
-        </Button>
+        </View>
         
         
     </LinearLayout>
