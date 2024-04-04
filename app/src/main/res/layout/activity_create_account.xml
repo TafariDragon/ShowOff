@@ -47,6 +47,9 @@
         android:gravity="center"
         android:layout_below="@+id/lblCrieSuaConta">
 
+
+
+
         <EditText
             android:id="@+id/txtNome"
             android:layout_width="300dp"
