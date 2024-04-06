@@ -19,6 +19,7 @@ class Login : AppCompatActivity() {
 
         binding.btnEntrar.setOnClickListener {
             startActivity(Intent(this,MenuPrincipal::class.java))
+
         }
     }
 }

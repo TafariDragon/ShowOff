@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Catalogo_Barbeiro">
+
+    <ImageView
+        android:id="@+id/iconBack"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="40dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="71dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/iconBack"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toEndOf="@+id/iconBack"
+        android:src="@drawable/cortedecabelo">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtCatalogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catálogo"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_below="@+id/Logo"
+       android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <ViewFlipper
+        android:id="@+id/containerImagem"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/txtCatalogo"
+        android:flipInterval="3000"
+         android:autoStart="true"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="328dp"
+            android:layout_height="458dp"
+            android:src="@drawable/modelo1"
+            android:layout_gravity="center"
+            android:background="@drawable/radioimage"
+            android:scaleType="fitXY">
+            
+        </ImageView>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="328dp"
+            android:layout_height="458dp"
+            android:src="@drawable/modelo2"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:background="@drawable/radioimage"></ImageView>
+
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="328dp"
+            android:layout_height="458dp"
+            android:src="@drawable/modelo3"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:background="@drawable/radioimage"></ImageView>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="328dp"
+            android:layout_height="458dp"
+            android:src="@drawable/modelo4"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:background="@drawable/radioimage"></ImageView>
+    </ViewFlipper>
+    
+    <Button
+        android:id="@+id/btnRealizarMarcacao"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/containerImagem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/roxo"
+        android:text="Realizar Marcação"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"></Button>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnRealizarMarcacao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/azul"
+        android:text="Verificar Marcação"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW-OFF"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></TextView>
+
+
+</RelativeLayout>

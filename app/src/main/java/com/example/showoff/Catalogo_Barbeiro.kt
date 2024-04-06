@@ -3,17 +3,17 @@ package com.example.showoff
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.showoff.databinding.ActivityCreateAccountBinding
+import com.example.showoff.databinding.ActivityCatalogoBarbeiroBinding
 
-class CreateAccount : AppCompatActivity() {
-    private  lateinit var binding: ActivityCreateAccountBinding
+class Catalogo_Barbeiro : AppCompatActivity() {
+    private lateinit var  binding: ActivityCatalogoBarbeiroBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityCreateAccountBinding.inflate(layoutInflater)
+        binding = ActivityCatalogoBarbeiroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.iconBack.setOnClickListener {
-            startActivity(Intent(this,Login::class.java))
+            startActivity(Intent(this,MenuPrincipal::class.java))
             finish()
         }
     }

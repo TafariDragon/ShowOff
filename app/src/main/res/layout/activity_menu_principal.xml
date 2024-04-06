@@ -50,6 +50,7 @@
 
         <!-- Primeiro botão -->
         <RelativeLayout
+            android:id="@+id/btnBarbeiro"
             android:layout_width="314dp"
             android:layout_height="155dp"
             android:layout_marginTop="40dp"

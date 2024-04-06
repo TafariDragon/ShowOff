@@ -15,5 +15,10 @@ class MenuPrincipal : AppCompatActivity() {
         binding.iconBack.setOnClickListener {
             startActivity(Intent(this,Login::class.java))
         }
+
+        binding.btnBarbeiro.setOnClickListener{
+            startActivity(Intent(this,Catalogo_Barbeiro::class.java))
+
+        }
     }
 }
