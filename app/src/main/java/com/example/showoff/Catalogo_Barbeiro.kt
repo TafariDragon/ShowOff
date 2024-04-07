@@ -14,7 +14,7 @@ class Catalogo_Barbeiro : AppCompatActivity() {
 
         binding.iconBack.setOnClickListener {
             startActivity(Intent(this,MenuPrincipal::class.java))
-            finish()
+
         }
     }
 }

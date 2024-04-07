@@ -15,10 +15,12 @@ class Login : AppCompatActivity() {
 
         binding.btnCadastrar.setOnClickListener {
             startActivity(Intent(this,CreateAccount::class.java))
+            finish()
         }
 
         binding.btnEntrar.setOnClickListener {
             startActivity(Intent(this,MenuPrincipal::class.java))
+            finish()
 
         }
     }

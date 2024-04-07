@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Catalogo_Barbeiro">
+    tools:context=".ActivitysCabeleleira.Catalogo_Cabeleleira">
 
     <ImageView
         android:id="@+id/iconBack"
@@ -28,6 +28,7 @@
 
     </ImageView>
 
+
     <TextView
         android:id="@+id/txtCatalogo"
         android:layout_width="wrap_content"
@@ -37,9 +38,8 @@
         android:textColor="@color/black"
         android:fontFamily="@font/poppinsbold"
         android:layout_below="@+id/Logo"
-       android:layout_marginStart="60dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="20dp">
-
     </TextView>
 
     <ViewFlipper
@@ -49,7 +49,7 @@
         android:layout_height="400dp"
         android:layout_below="@+id/txtCatalogo"
         android:flipInterval="3000"
-         android:autoStart="true"
+        android:autoStart="true"
         android:inAnimation="@android:anim/slide_in_left"
         android:outAnimation="@android:anim/slide_out_right">
 
@@ -57,18 +57,27 @@
             android:layout_marginTop="30dp"
             android:layout_width="328dp"
             android:layout_height="458dp"
-            android:src="@drawable/modelo1"
+            android:src="@drawable/modelotrancas"
             android:layout_gravity="center"
             android:background="@drawable/radioimage"
             android:scaleType="fitXY">
-            
+
         </ImageView>
 
         <ImageView
             android:layout_marginTop="30dp"
             android:layout_width="328dp"
             android:layout_height="458dp"
-            android:src="@drawable/modelo2"
+            android:src="@drawable/cristapenteado"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:background="@drawable/radioimage"></ImageView>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="328dp"
+            android:layout_height="458dp"
+            android:src="@drawable/cabeloscahiados"
             android:layout_gravity="center"
             android:scaleType="fitXY"
             android:background="@drawable/radioimage"></ImageView>
@@ -78,7 +87,7 @@
             android:layout_marginTop="30dp"
             android:layout_width="328dp"
             android:layout_height="458dp"
-            android:src="@drawable/modelo3"
+            android:src="@drawable/unhasnegras"
             android:layout_gravity="center"
             android:scaleType="fitXY"
             android:background="@drawable/radioimage"></ImageView>
@@ -87,12 +96,12 @@
             android:layout_marginTop="30dp"
             android:layout_width="328dp"
             android:layout_height="458dp"
-            android:src="@drawable/modelo4"
+            android:src="@drawable/pedicurenegra"
             android:layout_gravity="center"
             android:scaleType="fitXY"
             android:background="@drawable/radioimage"></ImageView>
     </ViewFlipper>
-    
+
     <Button
         android:id="@+id/btnRealizarMarcacao"
         android:layout_width="230dp"
@@ -125,6 +134,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textColor="@color/black"></TextView>
-
 
 </RelativeLayout>
