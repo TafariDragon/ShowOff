@@ -214,41 +214,60 @@
 
 
     
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/stepProgressBar">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/stepProgressBar"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
 
-            
-            <Button
-                android:layout_width="340dp"
-                android:layout_height="100dp"
-                android:text="M-PESA"
-                android:textSize="24sp"
-                android:fontFamily="@font/poppinsbold"
-                android:backgroundTint="@color/vermelho"></Button>
 
-            <Button
-                android:layout_width="340dp"
-                android:layout_height="100dp"
-                android:text="EMOLA"
-                android:textSize="24sp"
-                android:fontFamily="@font/poppinsbold"
-                android:layout_marginVertical="10dp"></Button>
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:text="M-PESA"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppinsbold"
+            android:backgroundTint="@color/vermelho"></Button>
 
-            <Button
-                android:layout_width="340dp"
-                android:layout_height="100dp"
-                android:text="MKESH"
-                android:textSize="24sp"
-                android:fontFamily="@font/poppinsbold"></Button>
-          
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:text="EMOLA"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/laranja"></Button>
 
-        </LinearLayout>
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:text="MKESH"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppinsbold"
+            android:backgroundTint="@color/amarelo"
+            android:drawableLeft="@drawable/iconmkesh"></Button>
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:text="CONTA MOVÉL"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppinsbold"
+            android:backgroundTint="@color/azul"
+            android:layout_marginTop="10dp"></Button>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
 
      
 
