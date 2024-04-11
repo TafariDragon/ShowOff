@@ -229,33 +229,39 @@
 
         <Button
             android:layout_width="340dp"
-            android:layout_height="100dp"
+            android:layout_height="115dp"
             android:text="M-PESA"
             android:textSize="24sp"
             android:fontFamily="@font/poppinsbold"
-            android:backgroundTint="@color/vermelho"></Button>
+            android:backgroundTint="@color/vermelho"
+            android:drawableLeft="@drawable/iconmpesa"
+            android:paddingRight="110dp"></Button>
 
         <Button
             android:layout_width="340dp"
-            android:layout_height="100dp"
+            android:layout_height="115dp"
             android:text="EMOLA"
             android:textSize="24sp"
             android:fontFamily="@font/poppinsbold"
             android:layout_marginVertical="10dp"
-            android:backgroundTint="@color/laranja"></Button>
+            android:backgroundTint="@color/laranja"
+            android:drawableLeft="@drawable/iconemola"
+            android:paddingRight="110dp">
+        </Button>
 
         <Button
             android:layout_width="340dp"
-            android:layout_height="100dp"
+            android:layout_height="115dp"
             android:text="MKESH"
             android:textSize="24sp"
             android:fontFamily="@font/poppinsbold"
             android:backgroundTint="@color/amarelo"
-            android:drawableLeft="@drawable/iconmkesh"></Button>
+            android:drawableLeft="@drawable/iconmkesh"
+            android:paddingRight="110dp"></Button>
 
         <Button
             android:layout_width="340dp"
-            android:layout_height="100dp"
+            android:layout_height="115dp"
             android:text="CONTA MOVÉL"
             android:textSize="24sp"
             android:fontFamily="@font/poppinsbold"

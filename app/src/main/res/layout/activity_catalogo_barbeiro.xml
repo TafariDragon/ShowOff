@@ -57,7 +57,7 @@
             android:layout_marginTop="30dp"
             android:layout_width="328dp"
             android:layout_height="458dp"
-            android:src="@drawable/modelo1"
+            android:src="@drawable/modelo01"
             android:layout_gravity="center"
             android:background="@drawable/radioimage"
             android:scaleType="fitXY">
