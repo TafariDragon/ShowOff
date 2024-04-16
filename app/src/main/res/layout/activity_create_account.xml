@@ -76,14 +76,7 @@
             android:fontFamily="@font/poppinslight"
             android:layout_marginTop="21dp"></EditText>
 
-        <EditText
-            android:id="@+id/txtNumBI"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:hint="Numero BI"
-            android:fontFamily="@font/poppinslight"
-            android:layout_marginTop="21dp"></EditText>
-
+         
         <EditText
             android:id="@+id/txtCriarSenha"
             android:layout_width="300dp"

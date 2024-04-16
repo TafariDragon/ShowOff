@@ -17,5 +17,9 @@ class Catalogo_Cabeleleira : AppCompatActivity() {
             startActivity(Intent(this, MenuPrincipal::class.java))
             finish()
         }
+
+        binding.btnRealizarMarcacao.setOnClickListener {
+            startActivity(Intent(this,Marcacacao1Cabeleleira::class.java))
+        }
     }
 }
