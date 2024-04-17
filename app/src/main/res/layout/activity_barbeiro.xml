@@ -221,13 +221,49 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
-             <androidx.recyclerview.widget.RecyclerView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnJose"
+                android:layout_marginTop="20dp"
+                android:layout_width="340dp"
+                android:layout_height="94dp"
+                android:backgroundTint="@color/cinzento"
+                android:text="JOSÉ CASTRO"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="24sp">
 
-             </androidx.recyclerview.widget.RecyclerView>
+            </Button>
+
+            <Button
+                android:id="@+id/btnLondrines"
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_height="94dp"
+                android:backgroundTint="@color/cinzento"
+                android:text="LONDRINES SOUSA"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="24sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnBata"
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_height="94dp"
+                android:backgroundTint="@color/cinzento"
+                android:text="JOSÉ BATA"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="24sp">
+
+            </Button>
+
 
         </LinearLayout>
 

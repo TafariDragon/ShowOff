@@ -13,7 +13,7 @@ class Marcacacao1Cabeleleira : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.iconBack.setOnClickListener {
-            startActivity(Intent(this,Catalogo_Cabeleleira::class.java));
+            startActivity(Intent(this, Catalogo_Cabeleleira::class.java));
         }
     }
 }

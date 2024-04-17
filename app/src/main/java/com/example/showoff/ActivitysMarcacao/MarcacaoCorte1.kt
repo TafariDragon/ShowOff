@@ -16,5 +16,10 @@ class MarcacaoCorte1 : AppCompatActivity() {
         binding.iconBack.setOnClickListener {
             startActivity(Intent(this,Catalogo_Barbeiro::class.java))
         }
+
+       binding.btnCabelo.setOnClickListener {
+           startActivity(Intent(this,Barbeiro::class.java))
+       }
+
     }
 }

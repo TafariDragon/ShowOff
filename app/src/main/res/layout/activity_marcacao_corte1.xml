@@ -241,6 +241,7 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/btnCabelo"
             android:layout_width="340dp"
             android:layout_height="94dp"
             android:backgroundTint="@color/cinzento"
@@ -250,6 +251,7 @@
             android:textSize="24sp"></Button>
 
         <Button
+            android:id="@+id/btnBarba"
             android:layout_width="340dp"
             android:layout_height="94dp"
             android:backgroundTint="@color/cinzento"
@@ -259,6 +261,7 @@
             android:textSize="24sp"></Button>
 
         <Button
+            android:id="@+id/btnPintura"
             android:layout_width="340dp"
             android:layout_height="94dp"
             android:backgroundTint="@color/cinzento"
@@ -268,6 +271,7 @@
             android:textSize="24sp"></Button>
 
         <Button
+            android:id="@+id/btnCabeloBarba"
             android:layout_width="340dp"
             android:layout_height="94dp"
             android:backgroundTint="@color/cinzento"
@@ -277,6 +281,7 @@
             android:textSize="24sp"></Button>
 
         <Button
+            android:id="@+id/btnCabeloPintura"
             android:layout_width="340dp"
             android:layout_height="94dp"
             android:backgroundTint="@color/cinzento"
@@ -286,6 +291,7 @@
             android:textSize="24sp"></Button>
 
         <Button
+            android:id="@+id/btnBarbaPintura"
             android:layout_width="340dp"
             android:layout_height="94dp"
             android:backgroundTint="@color/cinzento"
@@ -295,6 +301,7 @@
             android:textSize="24sp"></Button>
 
         <Button
+            android:id="@+id/btnCabeloBarbaPintura"
             android:layout_width="340dp"
             android:layout_height="94dp"
             android:backgroundTint="@color/cinzento"
