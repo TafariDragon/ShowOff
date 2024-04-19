@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".CreateAccount">
 
@@ -38,6 +38,14 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"></TextView>
+
+    
+    <ScrollView
+        android:id="@+id/scrollLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblCrieSuaConta">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -96,6 +104,7 @@
             android:inputType="textPassword"></EditText>
 
 
+
         <Button
             android:id="@+id/btnCadastrar"
             android:layout_width="201dp"
@@ -108,8 +117,16 @@
             ></Button>
 
 
-
     </LinearLayout>
+    </ScrollView>
+
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/scrollLogin">
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -119,7 +136,9 @@
         android:fontFamily="@font/poppinsbold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        ></TextView>
+        android:textColor="@color/black"></TextView>
+
+</RelativeLayout>
 
 
 

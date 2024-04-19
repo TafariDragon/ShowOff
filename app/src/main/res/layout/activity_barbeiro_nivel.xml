@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ActivitysMarcacao.Pagamento">
+    tools:context=".ActivitysMarcacao.BarbeiroNivel">
 
     <ImageView
         android:id="@+id/Logo"
@@ -40,6 +40,7 @@
         android:textSize="24sp"
         android:textStyle="bold"></TextView>
 
+
     <LinearLayout
         android:id="@+id/etiquetaFase"
         android:layout_width="363dp"
@@ -49,17 +50,15 @@
         android:layout_below="@+id/lblMarcação"
         android:layout_centerHorizontal="true">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppinsbold"
-            android:text="BARBEIRO"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="BARBEIRO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp">
         </TextView>
-
     </LinearLayout>
 
 
@@ -137,7 +136,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="50dp"
-                android:src="@drawable/blue_circle"
+                android:src="@drawable/gray_circle"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
@@ -148,7 +147,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_centerInParent="true"/>
         </RelativeLayout>
 
@@ -166,7 +165,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="50dp"
-                android:src="@drawable/blue_circle"
+                android:src="@drawable/gray_circle"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
@@ -177,7 +176,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_centerInParent="true"/>
 
         </RelativeLayout>
@@ -211,75 +210,78 @@
 
         </RelativeLayout>
 
+
+
     </LinearLayout>
 
 
-    
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@id/stepProgressBar">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stepProgressBar">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp">
+        android:orientation="vertical">
 
 
         <Button
-            android:id="@+id/btnMpesa"
+            android:id="@+id/btnJose"
             android:layout_width="340dp"
-            android:layout_height="115dp"
-            android:text="M-PESA"
-            android:textSize="24sp"
+            android:layout_height="94dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/cinzento"
             android:fontFamily="@font/poppinsbold"
-            android:backgroundTint="@color/vermelho"
-            android:drawableLeft="@drawable/iconmpesa"
-            android:paddingRight="110dp"></Button>
+            android:text="JOSE"
+            android:textColor="@color/black"
+            android:textSize="24sp">
+
+        </Button>
+
 
         <Button
-            android:id="@+id/btnEmola"
+            android:id="@+id/btnMateus"
             android:layout_width="340dp"
-            android:layout_height="115dp"
-            android:text="EMOLA"
-            android:textSize="24sp"
+            android:layout_height="94dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/cinzento"
             android:fontFamily="@font/poppinsbold"
-            android:layout_marginVertical="10dp"
-            android:backgroundTint="@color/laranja"
-            android:drawableLeft="@drawable/iconemola"
-            android:paddingRight="110dp">
+            android:text="MATEUS"
+            android:textColor="@color/black"
+            android:textSize="24sp">
         </Button>
 
         <Button
-            android:id="@+id/btnMkesh"
+            android:id="@+id/btnPedro"
             android:layout_width="340dp"
-            android:layout_height="115dp"
-            android:text="MKESH"
-            android:textSize="24sp"
+            android:layout_height="94dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/cinzento"
             android:fontFamily="@font/poppinsbold"
-            android:backgroundTint="@color/amarelo"
-            android:drawableLeft="@drawable/iconmkesh"
-            android:paddingRight="110dp"></Button>
+            android:text="PEDRO"
+            android:textColor="@color/black"
+            android:textSize="24sp">
+        </Button>
 
         <Button
-            android:id="@+id/btnContamovel"
+            android:id="@+id/btnDercio"
             android:layout_width="340dp"
-            android:layout_height="115dp"
-            android:text="CONTA MOVÉL"
-            android:textSize="24sp"
+            android:layout_height="94dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/cinzento"
             android:fontFamily="@font/poppinsbold"
-            android:backgroundTint="@color/azul"
-            android:layout_marginTop="10dp"></Button>
+            android:text="DERCIO"
+            android:textColor="@color/black"
+            android:textSize="24sp">
+        </Button>
+
 
     </LinearLayout>
-
-</ScrollView>
-
-
-
-
-     
+    </ScrollView>
 
 </RelativeLayout>

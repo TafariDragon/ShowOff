@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ActivitysMarcacao.Horario">
 
     <ImageView
@@ -231,11 +232,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/stepProgressBar"
-        android:text="DIA DE HOJE"
-        android:layout_margin="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@font/poppinsbold"
-        android:textSize="24sp"
-        android:textColor="@color/black">
+        android:text="DIA DE HOJE"
+        android:textColor="@color/black"
+        android:textSize="24sp">
 
     </TextView>
 
@@ -247,13 +251,46 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="340dp"
+                android:layout_height="94dp"
+                android:backgroundTint="@color/cinzento"
+                android:fontFamily="@font/poppinsbold"
+                android:text="8h:30min"
+                android:textColor="@color/black"
+                android:textSize="24sp"></Button>
 
-            </androidx.recyclerview.widget.RecyclerView>
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="94dp"
+                android:backgroundTint="@color/cinzento"
+                android:fontFamily="@font/poppinsbold"
+                android:text="9h:30min"
+                android:textColor="@color/black"
+                android:textSize="24sp"></Button>
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="94dp"
+                android:backgroundTint="@color/cinzento"
+                android:fontFamily="@font/poppinsbold"
+                android:text="11h:30min"
+                android:textColor="@color/black"
+                android:textSize="24sp"></Button>
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="94dp"
+                android:backgroundTint="@color/cinzento"
+                android:fontFamily="@font/poppinsbold"
+                android:text="16h:30min"
+                android:textColor="@color/black"
+                android:textSize="24sp"></Button>
 
         </LinearLayout>
 
