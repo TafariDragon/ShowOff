@@ -30,12 +30,15 @@ class Login : AppCompatActivity() {
             } else {
                 val loginManager = LoginManager(this)
                 loginManager.fazerLogin(contacto, senha, object : LoginManager.LoginListener {
-                    override fun onLoginSuccess() {
-                        Toast.makeText(this@Login, "Bem-vindo", Toast.LENGTH_LONG).show()
+                    override fun onLoginSuccess(nomeCliente: String) {
+
+                        Toast.makeText(this@Login, "Bem-vindo(a) $nomeCliente", Toast.LENGTH_LONG).show()
+                         passarParaMenuPrincipal()
+
                     }
 
                     override fun onUserNotExist() {
-                        Toast.makeText(this@Login, "Este usuário não existe", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this@Login, "Este utilizador não existe no Salão", Toast.LENGTH_LONG).show()
                     }
 
                     override fun onLoginError(errorMessage: String) {
@@ -45,5 +48,13 @@ class Login : AppCompatActivity() {
 
             }
         }
+
+
+    }
+
+    private fun passarParaMenuPrincipal() {
+        startActivity(Intent(this,MenuPrincipal::class.java))
+        finish()
+
     }
 }

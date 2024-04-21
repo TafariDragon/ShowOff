@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".ActivitysCabeleleira.Marcacacao1Cabeleleira">
+    tools:context=".ActivitysCabeleleira.ConclusionCabeleleira">
 
     <ImageView
         android:id="@+id/Logo"
@@ -53,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsbold"
-            android:text="Serviços"
+            android:text="CONCLUSÃO"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp">
@@ -107,7 +106,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="50dp"
-                android:src="@drawable/gray_circle"
+                android:src="@drawable/blue_circle"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
@@ -118,7 +117,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_centerInParent="true"/>
 
         </RelativeLayout>
@@ -137,7 +136,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="50dp"
-                android:src="@drawable/gray_circle"
+                android:src="@drawable/blue_circle"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
@@ -148,7 +147,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_centerInParent="true"/>
         </RelativeLayout>
 
@@ -166,7 +165,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="50dp"
-                android:src="@drawable/gray_circle"
+                android:src="@drawable/blue_circle"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
@@ -177,7 +176,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_centerInParent="true"/>
 
         </RelativeLayout>
@@ -195,7 +194,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="50dp"
-                android:src="@drawable/gray_circle"
+                android:src="@drawable/blue_circle"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
@@ -206,112 +205,64 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_centerInParent="true"/>
 
         </RelativeLayout>
 
-
-
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textoServiços"
-        android:layout_width="match_parent"
+        android:id="@+id/lblConclusion"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escolha um serviço"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/stepProgressBar"
+        android:textSize="20sp"
         android:fontFamily="@font/poppinsbold"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_below="@+id/stepProgressBar"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"></TextView>
+        android:text="Para realizar a marcação envie o valor x para este número"></TextView>
 
-    <ScrollView
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/lblContacto"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textoServiços">
+        android:layout_below="@+id/lblConclusion"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginHorizontal="10dp"
+        android:text="85 093 2810"
+        android:textColor="@color/azul"
+        android:textSize="20sp"></TextView>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/btnCabelo"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="CABELO"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnManicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="MANICURE"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnPedicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="PEDICURE"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnCabeloManicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="CABELO E MANICURE"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnCabeloPedicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="CABELO E PEDICURE"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnManicurePedicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="MANICURE E PEDICURE"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnCabeloManicurePedicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="CABELO MANICURE E PEDICURE"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/lblContacto"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        android:text="Só será atendido se realizar o pagamento \n \nOBRIGADO."></TextView>
 
 
-        </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/btnConculir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/azul"
+        android:text="Conculir"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"></Button>
+
+
+
+
 
 </RelativeLayout>

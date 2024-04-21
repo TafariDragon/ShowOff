@@ -11,7 +11,7 @@ import org.json.JSONException
 class LoginManager (private val context: Context) {
 
     interface LoginListener {
-        fun onLoginSuccess()
+        fun onLoginSuccess(nomeCliente: String)
         fun onUserNotExist()
         fun onLoginError(errorMessage: String)
     }
@@ -31,7 +31,8 @@ class LoginManager (private val context: Context) {
                         listener.onLoginError("Erro: $errorMessage")
                     } else {
                         if (response.has("cliente_existe")) {
-                            listener.onLoginSuccess()
+                            val nomeCliente = response.getString("nome")
+                            listener.onLoginSuccess(nomeCliente)
                         } else {
                             listener.onUserNotExist()
                         }

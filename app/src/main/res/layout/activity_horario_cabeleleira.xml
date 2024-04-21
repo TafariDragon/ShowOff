@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ActivitysCabeleleira.Marcacacao1Cabeleleira">
+    tools:context=".ActivitysCabeleleira.HorarioCabeleleira">
 
     <ImageView
         android:id="@+id/Logo"
@@ -24,6 +24,20 @@
         android:layout_marginBottom="49dp"
         android:clickable="true"
         android:src="@drawable/baseline_arrow_back_24"></ImageView>
+
+    <Button
+        android:id="@+id/btnOutroDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Logo"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="45dp"
+        android:layout_toEndOf="@+id/Logo"
+        android:backgroundTint="@color/azul"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Outro dia">
+
+    </Button>
 
     <TextView
         android:id="@+id/lblMarcação"
@@ -53,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsbold"
-            android:text="Serviços"
+            android:text="HORÁRIO"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp">
@@ -107,7 +121,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="50dp"
-                android:src="@drawable/gray_circle"
+                android:src="@drawable/blue_circle"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
@@ -118,7 +132,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_centerInParent="true"/>
 
         </RelativeLayout>
@@ -137,7 +151,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="50dp"
-                android:src="@drawable/gray_circle"
+                android:src="@drawable/blue_circle"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
@@ -148,7 +162,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppinsbold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_centerInParent="true"/>
         </RelativeLayout>
 
@@ -211,107 +225,74 @@
 
         </RelativeLayout>
 
-
-
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textoServiços"
-        android:layout_width="match_parent"
+        android:id="@+id/lblHorario"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escolha um serviço"
-        android:fontFamily="@font/poppinsbold"
-        android:textColor="@color/black"
-        android:textSize="20sp"
         android:layout_below="@+id/stepProgressBar"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"></TextView>
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="DIA DE HOJE"
+        android:textColor="@color/black"
+        android:textSize="24sp">
+
+    </TextView>
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textoServiços">
-
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lblHorario">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <Button
-                android:id="@+id/btnCabelo"
+                android:id="@+id/btn8"
                 android:layout_width="340dp"
                 android:layout_height="94dp"
                 android:backgroundTint="@color/cinzento"
-                android:text="CABELO"
-                android:textColor="@color/black"
                 android:fontFamily="@font/poppinsbold"
+                android:text="8h:30min"
+                android:textColor="@color/black"
                 android:textSize="24sp"></Button>
 
             <Button
-                android:id="@+id/btnManicure"
                 android:layout_width="340dp"
                 android:layout_height="94dp"
                 android:backgroundTint="@color/cinzento"
-                android:text="MANICURE"
-                android:textColor="@color/black"
                 android:fontFamily="@font/poppinsbold"
+                android:text="9h:30min"
+                android:textColor="@color/black"
                 android:textSize="24sp"></Button>
 
             <Button
-                android:id="@+id/btnPedicure"
                 android:layout_width="340dp"
                 android:layout_height="94dp"
                 android:backgroundTint="@color/cinzento"
-                android:text="PEDICURE"
-                android:textColor="@color/black"
                 android:fontFamily="@font/poppinsbold"
+                android:text="11h:30min"
+                android:textColor="@color/black"
                 android:textSize="24sp"></Button>
 
             <Button
-                android:id="@+id/btnCabeloManicure"
                 android:layout_width="340dp"
                 android:layout_height="94dp"
                 android:backgroundTint="@color/cinzento"
-                android:text="CABELO E MANICURE"
-                android:textColor="@color/black"
                 android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnCabeloPedicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="CABELO E PEDICURE"
+                android:text="16h:30min"
                 android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
                 android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnManicurePedicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="MANICURE E PEDICURE"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
-            <Button
-                android:id="@+id/btnCabeloManicurePedicure"
-                android:layout_width="340dp"
-                android:layout_height="94dp"
-                android:backgroundTint="@color/cinzento"
-                android:text="CABELO MANICURE E PEDICURE"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppinsbold"
-                android:textSize="24sp"></Button>
-
 
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 </RelativeLayout>
