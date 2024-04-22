@@ -13,6 +13,7 @@ class Catalogo_Barbeiro : AppCompatActivity() {
         binding = ActivityCatalogoBarbeiroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val nomeCliente = intent.getStringExtra("NomeCliente")
         binding.iconBack.setOnClickListener {
             startActivity(Intent(this,MenuPrincipal::class.java))
 
@@ -21,5 +22,7 @@ class Catalogo_Barbeiro : AppCompatActivity() {
         binding.btnRealizarMarcacao.setOnClickListener {
             startActivity(Intent(this,MarcacaoCorte1::class.java))
         }
+
+        binding.lblNomeUtilizador.setText(nomeCliente)
     }
 }

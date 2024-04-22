@@ -33,7 +33,7 @@ class Login : AppCompatActivity() {
                     override fun onLoginSuccess(nomeCliente: String) {
 
                         Toast.makeText(this@Login, "Bem-vindo(a) $nomeCliente", Toast.LENGTH_LONG).show()
-                         passarParaMenuPrincipal()
+                         passarParaMenuPrincipal(nomeCliente)
 
                     }
 
@@ -52,8 +52,8 @@ class Login : AppCompatActivity() {
 
     }
 
-    private fun passarParaMenuPrincipal() {
-        startActivity(Intent(this,MenuPrincipal::class.java))
+    private fun passarParaMenuPrincipal(nomeCliente: String) {
+        startActivity(Intent(this,MenuPrincipal::class.java).putExtra("NomeCliente",nomeCliente))
         finish()
 
     }

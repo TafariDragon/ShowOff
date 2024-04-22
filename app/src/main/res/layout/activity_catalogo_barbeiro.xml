@@ -29,13 +29,15 @@
     </ImageView>
 
     <TextView
+        android:id="@+id/lblNomeUtilizador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="30dp"
         android:fontFamily="@font/poppinsbold"
-        android:text="Tafari Vilanculos"
+        android:text="Tafari"
+        android:textSize="20sp"
         android:textColor="@color/black">
 
     </TextView>

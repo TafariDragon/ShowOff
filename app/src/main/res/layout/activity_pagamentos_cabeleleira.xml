@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ActivitysCabeleleira.PagamentosCabeleleira">
 
     <ImageView
@@ -52,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsbold"
-            android:text="BARBEIRO"
+            android:text="PAGAMENTOS"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp">

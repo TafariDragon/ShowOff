@@ -13,19 +13,21 @@ class MenuPrincipal : AppCompatActivity() {
         binding = ActivityMenuPrincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val nomeCliente = intent.getStringExtra("NomeCliente")
+
         binding.iconBack.setOnClickListener {
             startActivity(Intent(this,Login::class.java))
             finish()
         }
 
         binding.btnBarbeiro.setOnClickListener{
-            startActivity(Intent(this,Catalogo_Barbeiro::class.java))
+            startActivity(Intent(this@MenuPrincipal,Catalogo_Barbeiro::class.java).putExtra("NomeCliente",nomeCliente))
             finish()
 
         }
 
         binding.btnCabeleleira.setOnClickListener{
-            startActivity(Intent(this,Catalogo_Cabeleleira::class.java))
+            startActivity(Intent(this@MenuPrincipal,Catalogo_Cabeleleira::class.java).putExtra("NomeCliente",nomeCliente))
             finish()
 
         }
