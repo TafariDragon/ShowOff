@@ -3,6 +3,7 @@ package com.example.showoff
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.showoff.ActivityClientes.DadosCliente
 import com.example.showoff.ActivitysMarcacao.MarcacaoCorte1
 import com.example.showoff.databinding.ActivityCatalogoBarbeiroBinding
 
@@ -24,5 +25,9 @@ class Catalogo_Barbeiro : AppCompatActivity() {
         }
 
         binding.lblNomeUtilizador.setText(nomeCliente)
+
+        binding.iconEdit.setOnClickListener {
+            startActivity(Intent(this,DadosCliente::class.java))
+        }
     }
 }

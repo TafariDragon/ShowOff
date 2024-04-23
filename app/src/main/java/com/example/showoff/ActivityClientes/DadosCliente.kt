@@ -1,12 +1,18 @@
 package com.example.showoff.ActivityClientes
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.showoff.R
+import androidx.appcompat.app.AppCompatActivity
+import com.example.showoff.databinding.ActivityDadosClienteBinding
 
 class DadosCliente : AppCompatActivity() {
+    private lateinit var binding:ActivityDadosClienteBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dados_cliente)
+        binding= ActivityDadosClienteBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.iconBack.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

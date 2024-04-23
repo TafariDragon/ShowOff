@@ -1,9 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ActivityClientes.DadosCliente">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/ContainerMainDados"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:background="@drawable/bordasinferiores">
+
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:src="@drawable/iconvoltar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:clickable="true">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doutilizador"
+            android:layout_centerInParent="true"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Utilizador"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_below="@+id/imgPerfil"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ContainerMainDados"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nome Utlizador"></EditText>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Apelido Utlizador"
+            android:layout_marginTop="10dp"></EditText>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Contacto do Utlizador"
+            android:layout_marginTop="10dp"></EditText>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Senha Utlizador"
+            android:layout_marginTop="10dp"></EditText>
+        
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/azul"
+            android:text="Alterar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="10dp"></Button>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/vermelhoPalido"
+            android:text="Remover Conta"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="10dp"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
