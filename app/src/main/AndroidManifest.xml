@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityClientes.DadosCliente"
+            android:exported="false" />
+        <activity
             android:name=".ActivitysCabeleleira.PagamentosCabeleleira"
             android:exported="false" />
         <activity
@@ -61,7 +64,7 @@
             android:name=".MenuPrincipal"
             android:exported="false" />
         <activity
-            android:name=".CreateAccount"
+            android:name=".ActivityClientes.CreateAccount"
             android:exported="false" />
         <activity
             android:name=".Login"
