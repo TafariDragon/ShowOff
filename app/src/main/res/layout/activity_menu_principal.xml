@@ -93,7 +93,7 @@
                 android:id="@+id/lblCabeleleira"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CABELELEIRA"
+                android:text="CABELEREIRA"
                 android:textColor="@color/white"
                 android:fontFamily="@font/poppinsbold"
                 android:textSize="24sp"

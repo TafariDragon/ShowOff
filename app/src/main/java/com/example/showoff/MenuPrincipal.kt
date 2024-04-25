@@ -14,14 +14,17 @@ class MenuPrincipal : AppCompatActivity() {
         setContentView(binding.root)
 
         val nomeCliente = intent.getStringExtra("NomeCliente")
+        val contactoCliente= intent.getStringExtra("contactoCliente")
 
         binding.iconBack.setOnClickListener {
-            startActivity(Intent(this,Login::class.java))
+            onBackPressed()
             finish()
         }
 
         binding.btnBarbeiro.setOnClickListener{
-            startActivity(Intent(this@MenuPrincipal,Catalogo_Barbeiro::class.java).putExtra("NomeCliente",nomeCliente))
+            startActivity(Intent(this@MenuPrincipal,Catalogo_Barbeiro::class.java)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("contactoCliente",contactoCliente))
             finish()
 
         }

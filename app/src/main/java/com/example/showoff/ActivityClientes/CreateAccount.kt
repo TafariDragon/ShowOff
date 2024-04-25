@@ -51,8 +51,7 @@ class CreateAccount : AppCompatActivity() {
                     Response.Listener<String> { response ->
                         Toast.makeText(this, "DADOS SALVOS", Toast.LENGTH_LONG).show()
                     }, Response.ErrorListener { error ->
-                        Toast.makeText(this, "FALHA NA INSERÇÃO DE DADOS $error", Toast.LENGTH_LONG)
-                            .show()
+                        Toast.makeText(this, "FALHA NA INSERÇÃO DE DADOS $error", Toast.LENGTH_LONG).show()
                     }) {
 
                     override fun getParams(): MutableMap<String, String>? {

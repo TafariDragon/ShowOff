@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".VerificarMarcao"
+            android:exported="false" />
+        <activity
             android:name=".ActivityClientes.DadosCliente"
             android:exported="false" />
         <activity
@@ -44,9 +47,6 @@
             android:exported="false" />
         <activity
             android:name=".ActivitysMarcacao.Horario"
-            android:exported="false" />
-        <activity
-            android:name=".ActivitysMarcacao.Barbeiro"
             android:exported="false" />
         <activity
             android:name=".ActivitysMarcacao.Cortes"

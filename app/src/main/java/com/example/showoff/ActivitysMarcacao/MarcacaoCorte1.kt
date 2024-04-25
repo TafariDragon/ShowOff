@@ -3,7 +3,6 @@ package com.example.showoff.ActivitysMarcacao
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.showoff.Catalogo_Barbeiro
 import com.example.showoff.databinding.ActivityMarcacaoCorte1Binding
 
 class MarcacaoCorte1 : AppCompatActivity() {
@@ -13,12 +12,17 @@ class MarcacaoCorte1 : AppCompatActivity() {
         binding= ActivityMarcacaoCorte1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val nomeCliente = intent.getStringExtra("NomeCliente")
+        val contactoCliente= intent.getStringExtra("contactoCliente")
+
         binding.iconBack.setOnClickListener {
-            startActivity(Intent(this,Catalogo_Barbeiro::class.java))
+           onBackPressed()
         }
 
         binding.btnCabelo.setOnClickListener {
-            startActivity(Intent(this,BarbeiroNivel::class.java))
+            startActivity(Intent(this,Cortes::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente))
         }
 
     }

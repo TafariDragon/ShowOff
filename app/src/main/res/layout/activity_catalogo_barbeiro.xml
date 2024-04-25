@@ -42,6 +42,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"></TextView>
 
+    <!--
     <ImageView
         android:id="@+id/iconEdit"
         android:layout_width="30dp"
@@ -52,7 +53,7 @@
         android:layout_marginRight="5dp"
         android:src="@drawable/baseline_edit_24"
         android:clickable="true"></ImageView>
-
+-->
     <TextView
         android:id="@+id/txtCatalogo"
         android:layout_width="wrap_content"
@@ -131,6 +132,7 @@
         android:fontFamily="@font/poppinsbold"></Button>
 
     <Button
+        android:id="@+id/btnVerificarMarcacao"
         android:layout_width="230dp"
         android:layout_height="70dp"
         android:layout_below="@+id/btnRealizarMarcacao"

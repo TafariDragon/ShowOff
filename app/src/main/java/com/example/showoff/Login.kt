@@ -31,10 +31,10 @@ class Login : AppCompatActivity() {
             } else {
                 val loginManager = LoginManager(this)
                 loginManager.fazerLogin(contacto, senha, object : LoginManager.LoginListener {
-                    override fun onLoginSuccess(nomeCliente: String) {
+                    override fun onLoginSuccess(nomeCliente: String,contactoCliente:String) {
 
                         Toast.makeText(this@Login, "Bem-vindo(a) $nomeCliente", Toast.LENGTH_LONG).show()
-                         passarParaMenuPrincipal(nomeCliente)
+                         passarParaMenuPrincipal(nomeCliente,contactoCliente)
 
                     }
 
@@ -53,8 +53,12 @@ class Login : AppCompatActivity() {
 
     }
 
-    private fun passarParaMenuPrincipal(nomeCliente: String) {
-        startActivity(Intent(this,MenuPrincipal::class.java).putExtra("NomeCliente",nomeCliente))
+    private fun passarParaMenuPrincipal(nomeCliente: String,contactoCliente:String) {
+        var intent=Intent(this,MenuPrincipal::class.java)
+        intent.putExtra("NomeCliente",nomeCliente)
+        intent.putExtra("contactoCliente",nomeCliente)
+        startActivity(intent)
+
         finish()
 
     }

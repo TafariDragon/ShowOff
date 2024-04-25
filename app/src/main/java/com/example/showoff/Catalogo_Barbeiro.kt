@@ -3,7 +3,6 @@ package com.example.showoff
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.showoff.ActivityClientes.DadosCliente
 import com.example.showoff.ActivitysMarcacao.MarcacaoCorte1
 import com.example.showoff.databinding.ActivityCatalogoBarbeiroBinding
 
@@ -14,20 +13,42 @@ class Catalogo_Barbeiro : AppCompatActivity() {
         binding = ActivityCatalogoBarbeiroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val nomeCliente = intent.getStringExtra("NomeCliente")
+        val nomeCliente = intent.getStringExtra("NomeCliente").toString()
+        val contactoCliente= intent.getStringExtra("contactoCliente").toString()
+        val valorCorte=intent.getStringExtra("ValorCorte").toString()
+        val nomeCorte=intent.getStringExtra("NomeCorte").toString()
+        val nomeBarbeiro= intent.getStringExtra("NomeBarbeiro").toString()
+        val horaMarcacao=intent.getStringExtra("HorasMarcacao").toString()
+        val dataMarcacao=intent.getStringExtra("DataMarcacao").toString()
+        val carteiraMovel=intent.getStringExtra("CarteiraMovel").toString()
         binding.iconBack.setOnClickListener {
             startActivity(Intent(this,MenuPrincipal::class.java))
 
         }
 
         binding.btnRealizarMarcacao.setOnClickListener {
-            startActivity(Intent(this,MarcacaoCorte1::class.java))
+            startActivity(Intent(this,MarcacaoCorte1::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente))
         }
 
         binding.lblNomeUtilizador.setText(nomeCliente)
 
+        /*
         binding.iconEdit.setOnClickListener {
             startActivity(Intent(this,DadosCliente::class.java))
+        }
+*/
+        binding.btnVerificarMarcacao.setOnClickListener {
+            startActivity(Intent(this,VerificarMarcao::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horaMarcacao)
+                .putExtra("DataMarcacao",dataMarcacao)
+                .putExtra("CarteiraMovel",carteiraMovel))
         }
     }
 }

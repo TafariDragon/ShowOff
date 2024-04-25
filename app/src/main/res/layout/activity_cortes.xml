@@ -95,11 +95,240 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/detalhesCorte">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/btnPunk"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/bordascortesbtn"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true">
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Punk Normal"
+                android:textColor="@color/azul"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginLeft="10dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15min"
+                android:textColor="@color/roxo"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50.0mt"
+                android:textColor="@color/vermelho"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp">
+            </TextView>
+
+        </RelativeLayout>
+        <!--=======================Fim Punk==========================-->
+
+        <RelativeLayout
+            android:id="@+id/btnPunkFino"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/bordascortesbtn"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Punk Fino"
+                android:textColor="@color/azul"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginLeft="10dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20min"
+                android:textColor="@color/roxo"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150.0mt"
+                android:textColor="@color/vermelho"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp">
+            </TextView>
+
+        </RelativeLayout>
+
+            <!--=======================Fim Punk Fino ==========================-->
+
+            <RelativeLayout
+                android:id="@+id/btnJuba"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/bordascortesbtn"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Juba"
+                    android:textColor="@color/azul"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginLeft="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10min"
+                    android:textColor="@color/roxo"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_centerHorizontal="true">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50.0mt"
+                    android:textColor="@color/vermelho"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp">
+                </TextView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btnCrista"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/bordascortesbtn"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crista"
+                    android:textColor="@color/azul"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginLeft="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20min"
+                    android:textColor="@color/roxo"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_centerHorizontal="true">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50.0mt"
+                    android:textColor="@color/vermelho"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnMoicano"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/bordascortesbtn"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moicano"
+                    android:textColor="@color/azul"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginLeft="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30min"
+                    android:textColor="@color/roxo"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_centerHorizontal="true">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="250.0mt"
+                    android:textColor="@color/vermelho"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp">
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
     </ScrollView>
 

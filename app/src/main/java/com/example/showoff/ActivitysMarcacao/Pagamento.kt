@@ -12,29 +12,71 @@ class Pagamento : AppCompatActivity() {
         binding=ActivityPagamentoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val nomeCliente = intent.getStringExtra("NomeCliente")
+        val contactoCliente= intent.getStringExtra("contactoCliente")
+        val valorCorte=intent.getStringExtra("ValorCorte")
+        val nomeCorte=intent.getStringExtra("NomeCorte")
+        val nomeBarbeiro= intent.getStringExtra("NomeBarbeiro")
+        val horaMarcacao=intent.getStringExtra("HorasMarcacao")
+        val dataMarcacao=intent.getStringExtra("DataMarcacao")
+
         binding.iconBack.setOnClickListener {
             onBackPressed()
         }
 
         binding.btnMpesa.setOnClickListener {
-
-            startActivity(Intent(this,ConclusionBarbeiro::class.java))
+            var carteiraMovel="M-Pesa"
+            startActivity(Intent(this,ConclusionBarbeiro::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horaMarcacao)
+                .putExtra("DataMarcacao",dataMarcacao)
+                .putExtra("CarteiraMovel",carteiraMovel))
 
         }
 
         binding.btnEmola.setOnClickListener {
-
-            startActivity(Intent(this,ConclusionBarbeiro::class.java))
+            var carteiraMovel="EMOLA"
+            startActivity(Intent(this,ConclusionBarbeiro::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horaMarcacao)
+                .putExtra("DataMarcacao",dataMarcacao)
+                .putExtra("CarteiraMovel",carteiraMovel))
 
         }
 
         binding.btnMkesh.setOnClickListener {
-            startActivity(Intent(this,ConclusionBarbeiro::class.java))
+            var carteiraMovel="MKESH"
+            startActivity(Intent(this,ConclusionBarbeiro::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horaMarcacao)
+                .putExtra("DataMarcacao",dataMarcacao)
+                .putExtra("CarteiraMovel",carteiraMovel))
 
         }
 
         binding.btnContamovel.setOnClickListener {
-            startActivity(Intent(this,ConclusionBarbeiro::class.java))
+            var carteiraMovel="CONTA MOVÉL"
+            startActivity(Intent(this,ConclusionBarbeiro::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horaMarcacao)
+                .putExtra("DataMarcacao",dataMarcacao)
+                .putExtra("CarteiraMovel",carteiraMovel))
 
         }
     }

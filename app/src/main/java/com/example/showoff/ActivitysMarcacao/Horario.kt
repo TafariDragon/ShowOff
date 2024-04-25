@@ -16,6 +16,12 @@ class Horario : AppCompatActivity() {
         binding=ActivityHorarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val nomeCliente = intent.getStringExtra("NomeCliente")
+        val contactoCliente= intent.getStringExtra("contactoCliente")
+        val valorCorte=intent.getStringExtra("ValorCorte")
+        val nomeCorte=intent.getStringExtra("NomeCorte")
+        val nomeBarbeiro= intent.getStringExtra("NomeBarbeiro")
+
         binding.iconBack.setOnClickListener {
             onBackPressed()
         }
@@ -30,7 +36,51 @@ class Horario : AppCompatActivity() {
 
 
         binding.btn8.setOnClickListener {
-            startActivity(Intent(this,Pagamento::class.java))
+            val horas="8h:30min"
+            startActivity(Intent(this,Pagamento::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horas)
+                .putExtra("DataMarcacao",diaHoje))
+        }
+
+        binding.btn9.setOnClickListener {
+            val horas="9h:30min"
+            startActivity(Intent(this,Pagamento::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horas)
+                .putExtra("DataMarcacao",diaHoje))
+        }
+
+        binding.btn11.setOnClickListener {
+            val horas="11h:30min"
+            startActivity(Intent(this,Pagamento::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horas)
+                .putExtra("DataMarcacao",diaHoje))
+        }
+
+        binding.btn16.setOnClickListener {
+            val horas="16h:30min"
+            startActivity(Intent(this,Pagamento::class.java)
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("NomeCliente",nomeCliente)
+                .putExtra("ValorCorte",valorCorte)
+                .putExtra("NomeCorte",nomeCorte)
+                .putExtra("NomeBarbeiro",nomeBarbeiro)
+                .putExtra("HorasMarcacao",horas)
+                .putExtra("DataMarcacao",diaHoje))
         }
 
 
