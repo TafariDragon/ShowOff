@@ -13,9 +13,12 @@ class MenuPrincipal : AppCompatActivity() {
         binding = ActivityMenuPrincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        val idCliente = intent.getStringExtra("idCliente")
         val nomeCliente = intent.getStringExtra("NomeCliente")
         val contactoCliente= intent.getStringExtra("contactoCliente")
-
+        val apelidoCliente= intent.getStringExtra("apelidoCliente")
+        val senhaCliente= intent.getStringExtra("senhaCliente")
         binding.iconBack.setOnClickListener {
             onBackPressed()
             finish()
@@ -24,7 +27,11 @@ class MenuPrincipal : AppCompatActivity() {
         binding.btnBarbeiro.setOnClickListener{
             startActivity(Intent(this@MenuPrincipal,Catalogo_Barbeiro::class.java)
                 .putExtra("NomeCliente",nomeCliente)
-                .putExtra("contactoCliente",contactoCliente))
+                .putExtra("contactoCliente",contactoCliente)
+                .putExtra("apelidoCliente",apelidoCliente)
+                .putExtra("senhaCliente",senhaCliente)
+                .putExtra("idCliente",idCliente))
+
             finish()
 
         }

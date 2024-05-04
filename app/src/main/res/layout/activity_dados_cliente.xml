@@ -31,6 +31,7 @@
             android:layout_centerInParent="true"></ImageView>
 
         <TextView
+            android:id="@+id/lblNomeUtilizador"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nome Utilizador"
@@ -52,29 +53,34 @@
         android:layout_marginTop="50dp">
 
         <EditText
+            android:id="@+id/txtNome"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="Nome Utlizador"></EditText>
 
         <EditText
+            android:id="@+id/txtApelido"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="Apelido Utlizador"
             android:layout_marginTop="10dp"></EditText>
 
         <EditText
+            android:id="@+id/txtContacto"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="Contacto do Utlizador"
             android:layout_marginTop="10dp"></EditText>
 
         <EditText
+            android:id="@+id/txtSenha"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="Senha Utlizador"
             android:layout_marginTop="10dp"></EditText>
         
         <Button
+            android:id="@+id/btnAlterar"
             android:layout_width="250dp"
             android:layout_height="60dp"
             android:backgroundTint="@color/azul"
@@ -85,6 +91,7 @@
             android:layout_marginTop="10dp"></Button>
 
         <Button
+            android:id="@+id/btnRemoverConta"
             android:layout_width="250dp"
             android:layout_height="60dp"
             android:backgroundTint="@color/vermelhoPalido"
@@ -95,5 +102,15 @@
             android:layout_marginTop="10dp"></Button>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW-OFF"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"></TextView>
 
 </RelativeLayout>

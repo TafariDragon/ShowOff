@@ -44,7 +44,7 @@ class Horario : AppCompatActivity() {
                 .putExtra("NomeCorte",nomeCorte)
                 .putExtra("NomeBarbeiro",nomeBarbeiro)
                 .putExtra("HorasMarcacao",horas)
-                .putExtra("DataMarcacao",diaHoje))
+                .putExtra("DataMarcacao",diaHoje.toString()))
         }
 
         binding.btn9.setOnClickListener {
