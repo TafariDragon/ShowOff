@@ -30,6 +30,10 @@ class Catalogo_Barbeiro : AppCompatActivity() {
 
         }
 
+        binding.iconHOme.setOnClickListener {
+            startActivity(Intent(this,Login::class.java))
+        }
+
         binding.btnRealizarMarcacao.setOnClickListener {
             startActivity(Intent(this,MarcacaoCorte1::class.java)
                 .putExtra("contactoCliente",contactoCliente)

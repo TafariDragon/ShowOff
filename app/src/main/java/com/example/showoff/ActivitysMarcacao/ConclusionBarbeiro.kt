@@ -2,6 +2,7 @@ package com.example.showoff.ActivitysMarcacao
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
@@ -13,7 +14,8 @@ import com.example.showoff.Catalogo_Barbeiro
 import com.example.showoff.databinding.ActivityConclusionBarbeiroBinding
 
 class ConclusionBarbeiro : AppCompatActivity() {
-    private lateinit var  binding: ActivityConclusionBarbeiroBinding
+    private lateinit var binding: ActivityConclusionBarbeiroBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityConclusionBarbeiroBinding.inflate(layoutInflater)
@@ -42,8 +44,12 @@ class ConclusionBarbeiro : AppCompatActivity() {
             val resultadoPost = object : StringRequest(
                 Request.Method.POST, urlAPIShowoff,
                 Response.Listener<String> { response ->
+                    // Log the response from the server
+                    Log.d("API_Response", response)
                     Toast.makeText(this, "MARCAÇÃO FEITA", Toast.LENGTH_LONG).show()
                 }, Response.ErrorListener { error ->
+                    // Log the error
+                    Log.e("API_Error", error.toString())
                     Toast.makeText(this, "FALHA NA MARCAÇÃO $error", Toast.LENGTH_LONG).show()
                 }) {
 
@@ -57,6 +63,10 @@ class ConclusionBarbeiro : AppCompatActivity() {
                     parametros["Horas_M"] = horaMarcacao
                     parametros["C_Movel"] = carteiraMovel
                     parametros["Valor"] = valorCorte
+
+                    // Log the parameters being sent
+                    Log.d("API_Params", parametros.toString())
+
                     return parametros
                 }
 
@@ -69,19 +79,15 @@ class ConclusionBarbeiro : AppCompatActivity() {
 
             queue.add(resultadoPost)
 
-
-
-
-            startActivity(Intent(this,Catalogo_Barbeiro::class.java)
-                .putExtra("contactoCliente",contactoCliente)
-                .putExtra("NomeCliente",nomeCliente)
-                .putExtra("ValorCorte",valorCorte)
-                .putExtra("NomeCorte",nomeCorte)
-                .putExtra("NomeBarbeiro",nomeBarbeiro)
-                .putExtra("HorasMarcacao",horaMarcacao)
-                .putExtra("DataMarcacao",dataMarcacao)
-                .putExtra("CarteiraMovel",carteiraMovel))
-
+            startActivity(Intent(this, Catalogo_Barbeiro::class.java)
+                .putExtra("contactoCliente", contactoCliente)
+                .putExtra("NomeCliente", nomeCliente)
+                .putExtra("ValorCorte", valorCorte)
+                .putExtra("NomeCorte", nomeCorte)
+                .putExtra("NomeBarbeiro", nomeBarbeiro)
+                .putExtra("HorasMarcacao", horaMarcacao)
+                .putExtra("DataMarcacao", dataMarcacao)
+                .putExtra("CarteiraMovel", carteiraMovel))
         }
     }
 }

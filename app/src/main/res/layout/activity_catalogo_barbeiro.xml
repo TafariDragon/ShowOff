@@ -35,13 +35,28 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="114dp"
         android:layout_marginRight="50dp"
         android:fontFamily="@font/poppinsbold"
         android:text="Tafari"
         android:textColor="@color/black"
         android:textSize="20sp"></TextView>
 
+    <ImageView
+        android:id="@+id/iconHOme"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/Logo"
+        android:layout_alignEnd="@+id/iconEdit"
+        android:layout_alignBottom="@+id/Logo"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-47dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/baseline_home_24">
+
+    </ImageView>
 
     <ImageView
         android:id="@+id/iconEdit"
@@ -49,10 +64,10 @@
         android:layout_height="30dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="75dp"
         android:layout_marginRight="5dp"
-        android:src="@drawable/baseline_edit_24"
-        android:clickable="true"></ImageView>
+        android:clickable="true"
+        android:src="@drawable/baseline_edit_24"></ImageView>
 
     <TextView
         android:id="@+id/txtCatalogo"

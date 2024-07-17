@@ -1,5 +1,6 @@
 package com.example.showoff.ActivityClientes
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.showoff.Login
 import com.example.showoff.databinding.ActivityDadosClienteBinding
 
 class DadosCliente : AppCompatActivity() {
@@ -26,7 +28,8 @@ class DadosCliente : AppCompatActivity() {
             onBackPressed()
         }
 
-        binding.lblNomeUtilizador.setText(nomeCliente+idCliente)
+        binding.lblIDCliente.setText("ID: $idCliente")
+        binding.lblNomeUtilizador.setText(nomeCliente)
         binding.txtNome.setText(nomeCliente)
         binding.txtApelido.setText(apelidoCliente)
         binding.txtContacto.setText(contactoCliente)
@@ -35,7 +38,7 @@ class DadosCliente : AppCompatActivity() {
 
         binding.btnAlterar.setOnClickListener {
             val urlAlterar="http://192.168.43.49/showoffAPI/alterar.php"
-             var nomeC=binding.txtNome.text.toString()
+            var nomeC=binding.txtNome.text.toString()
             var apelidoC=binding.txtApelido.text.toString()
             var contactoC=binding.txtContacto.text.toString()
             var senhaC=binding.txtSenha.text.toString()
@@ -62,6 +65,33 @@ class DadosCliente : AppCompatActivity() {
             }
 
             queue.add(resultPost)
+            onBackPressed()
+
+        }
+
+
+        binding.btnRemoverConta.setOnClickListener {
+            val urlApagar="http://192.168.43.49/showoffAPI/apagar.php"
+            val queue: RequestQueue = Volley.newRequestQueue(this)
+            val resultPost = object:StringRequest(Request.Method.POST,urlApagar,
+                Response.Listener {response ->
+                    Toast.makeText(this,"Cliente Removido com sucesso",Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this,Login::class.java))
+                },Response.ErrorListener {error ->
+                    Toast.makeText(this,"Erro em apagar a conta $error",Toast.LENGTH_LONG).show()
+                }){
+                override fun getParams(): MutableMap<String, String>? {
+                    val parametros = HashMap<String, String>()
+                    parametros.put("id_Clientes",idCliente)
+                    return parametros
+
+                }
+            }
+
+            queue.add(resultPost)
+            onBackPressed()
+
+
         }
 
     }

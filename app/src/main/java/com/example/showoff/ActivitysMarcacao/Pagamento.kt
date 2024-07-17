@@ -25,7 +25,7 @@ class Pagamento : AppCompatActivity() {
         }
 
         binding.btnMpesa.setOnClickListener {
-            var carteiraMovel="M-Pesa"
+            var carteiraMovel="M-PESA"
             startActivity(Intent(this,ConclusionBarbeiro::class.java)
                 .putExtra("contactoCliente",contactoCliente)
                 .putExtra("NomeCliente",nomeCliente)

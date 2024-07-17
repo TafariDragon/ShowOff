@@ -27,7 +27,7 @@ class Horario : AppCompatActivity() {
         }
 
         var diaHoje = LocalDate.now()
-
+        val data = diaHoje.toString()
         val textoExistente = binding.lblHorario.text.toString()
         val dataAtual = "$textoExistente \n$diaHoje"
 
@@ -44,7 +44,7 @@ class Horario : AppCompatActivity() {
                 .putExtra("NomeCorte",nomeCorte)
                 .putExtra("NomeBarbeiro",nomeBarbeiro)
                 .putExtra("HorasMarcacao",horas)
-                .putExtra("DataMarcacao",diaHoje.toString()))
+                .putExtra("DataMarcacao",data))
         }
 
         binding.btn9.setOnClickListener {
@@ -56,7 +56,7 @@ class Horario : AppCompatActivity() {
                 .putExtra("NomeCorte",nomeCorte)
                 .putExtra("NomeBarbeiro",nomeBarbeiro)
                 .putExtra("HorasMarcacao",horas)
-                .putExtra("DataMarcacao",diaHoje))
+                .putExtra("DataMarcacao",data))
         }
 
         binding.btn11.setOnClickListener {
@@ -68,7 +68,7 @@ class Horario : AppCompatActivity() {
                 .putExtra("NomeCorte",nomeCorte)
                 .putExtra("NomeBarbeiro",nomeBarbeiro)
                 .putExtra("HorasMarcacao",horas)
-                .putExtra("DataMarcacao",diaHoje))
+                .putExtra("DataMarcacao",data))
         }
 
         binding.btn16.setOnClickListener {
@@ -80,7 +80,7 @@ class Horario : AppCompatActivity() {
                 .putExtra("NomeCorte",nomeCorte)
                 .putExtra("NomeBarbeiro",nomeBarbeiro)
                 .putExtra("HorasMarcacao",horas)
-                .putExtra("DataMarcacao",diaHoje))
+                .putExtra("DataMarcacao",data))
         }
 
 

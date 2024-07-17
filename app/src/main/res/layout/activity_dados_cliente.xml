@@ -7,6 +7,7 @@
     android:background="@color/white"
     tools:context=".ActivityClientes.DadosCliente">
 
+
     <RelativeLayout
         android:id="@+id/ContainerMainDados"
         android:layout_width="match_parent"
@@ -17,37 +18,49 @@
             android:id="@+id/iconBack"
             android:layout_width="50dp"
             android:layout_height="52dp"
-            android:src="@drawable/iconvoltar"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="60dp"
-            android:clickable="true">
-        </ImageView>
+            android:clickable="true"
+            android:src="@drawable/iconvoltar"></ImageView>
+
+        <TextView
+            android:id="@+id/lblIDCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="60dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="ID:5"
+            android:textColor="@color/white"
+            android:textSize="20sp"></TextView>
 
         <ImageView
             android:id="@+id/imgPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/doutilizador"
-            android:layout_centerInParent="true"></ImageView>
+            android:layout_centerInParent="true"
+            android:src="@drawable/doutilizador"></ImageView>
 
         <TextView
             android:id="@+id/lblNomeUtilizador"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome Utilizador"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:fontFamily="@font/poppinsbold"
             android:layout_below="@+id/imgPerfil"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"></TextView>
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Nome Utilizador"
+            android:textColor="@color/white"
+            android:textSize="20sp"></TextView>
 
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/containerForm"
+        android:layout_below="@+id/ContainerMainDados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ContainerMainDados"
         android:orientation="vertical"
         android:gravity="center"
         android:layout_marginTop="50dp">
@@ -104,6 +117,7 @@
     </LinearLayout>
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SHOW-OFF"
